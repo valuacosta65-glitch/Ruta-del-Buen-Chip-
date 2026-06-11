@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta del Buen Chipá</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="wrap-main">
+
+<header class="header">
+
+    <img id="logo" src= "IMG/LOGO.png" alt="Ruta del Buen Chipá">
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#tu-chipa-ideal">Tu Chipá Ideal</a>
+        <a href="#la-ruta">La Ruta</a>
+        <a href="Autora.html">Contacto</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="categoria">
+            Guía gastronómica cordobesa
+        </span>
+
+      <h1 class="titulo-hero">RUTA DEL BUEN CHIPÁ</h1>
+
+        <p>
+            Descubrí dónde probar los mejores chipás de Córdoba.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- INTRO -->
+
+<section class="intro-section">
+
+    <div class="intro-image">
+        <img src= "IMG/foto 1.jpg"
+            alt="Chipás recién horneados">
+        <p class="media-source">
+            Fuente:
+            <a href="https://ar.pinterest.com/pin/1087549010065529679/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+        </p>
+    </div>
+
+    <div class="intro-text">
+
+        <span class="section-tag">
+            SOBRE LA RUTA
+        </span>
+
+        <h2>
+            EXPLORÁ...
+        </h2>
+
+        <p>
+            La provincia de Córdoba está repleta de rincones gastronómicos que se destacan por la calidad de sus productos. Es por eso que, desde la <strong>Ruta del Buen Chipá</strong> preparamos un segmento dedicado a descubrir, organizar y visibilizar los mejores lugares para disfrutar de esta delicia en la ciudad.
+        </p>
+
+
+    </div>
+
+</section>
+
+<!-- VIDEO -->
+
+<section class="video-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            SOBRE EL CHIPÁ
+        </span>
+
+        <h2>
+            El arte de un buen chipá
+        </h2>
+
+        <p>
+            Es un pan elaborado con almidón de mandioca, huevos y mucho queso.
+        </p>
+
+    </div> <!-- Cierra section-header -->
+
+    <div class="hero-video">
+
+        <video autoplay muted loop playsinline>
+            <source src="VIDEO/videchipa.mp4" type="video/mp4">
+        </video>
+
+    </div>
+    <p class="media-source center">
+        Fuente:
+        <a href="https://ar.pinterest.com/pin/173388654400543697/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+    </p>
+
+    <p class="link-chipa">
+        <a href="https://es.wikipedia.org/wiki/Chipa" target="_blank" rel="noopener noreferrer">
+            Conocé más sobre el chipá
+        </a>
+    </p>
+
+</section>
+
+<!-- TU CHIPÁ IDEAL -->
+
+<section id="tu-chipa-ideal" class="cards-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            TU CHIPÁ IDEAL
+        </span>
+
+        <h2>
+            Elegí tu favorito
+        </h2>
+
+    </div>
+
+    <div class="cards-grid">
+
+        <article class="card" onclick="seleccionar(this, 'Tradicional')">
+
+            <img src="IMG/chipa tradicional.png" alt="Chipá Tradicional">
+            <p class="media-source">
+                Fuente:
+                <a href="https://granotec.com.ar/chipa-tradicion-sabor-y-el-secreto-detras-de-su-autentica-textura/" target="_blank" rel="noopener noreferrer">Granotec</a>
+            </p>
+
+            <div class="card-content">
+
+                <h3>Tradicional</h3>
+
+                <p>
+                    La versión clásica que nunca falla.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="card" onclick="seleccionar(this, 'Extra queso')">
+
+            <img src="IMG/chipa extra q.jpg" alt="Chipá Extra Queso">
+            <p class="media-source">
+                Fuente:
+                <a href="https://ar.pinterest.com/pin/858498747760510563/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+            </p>
+
+            <div class="card-content">
+
+                <h3>Extra queso</h3>
+
+                <p>
+                    Para los verdaderos fanáticos del queso.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="card" onclick="seleccionar(this, 'Con hierbas')">
+
+            <img src="IMG/chipa hierbas.jpg" alt="Chipá con Hierbas">
+            <p class="media-source">
+                Fuente:
+                <a href="https://chipatremendo.blogspot.com/2014/08/lanzamiento-gourmet-nuevo-sabor-oregano.html" target="_blank" rel="noopener noreferrer">Chipá Tremendo</a>
+            </p>
+
+            <div class="card-content">
+
+                <h3>Con hierbas</h3>
+
+                <p>
+                    Un chipá fresco y diferente: orégano, perejil o ciboulette.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="card" onclick="seleccionar(this, 'Relleno')">
+
+            <img src="IMG/chipa salame.webp" alt="Chipá Relleno">
+
+            <div class="card-content">
+
+                <h3>Relleno</h3>
+
+                <p>
+                    Un chipá con más personalidad: salame, queso y mucho sabor.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <div id="resultado" class="resultado">
+        Hacé clic sobre un chipá para elegir tu favorito.
+    </div>
+
+</section>
+
+<!-- VARIEDADES -->
+
+<section class="variedades-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            VARIEDADES
+        </span>
+
+        <h2>
+            Según su forma y preparación 
+        </h2>
+
+    </div>
+
+    <div class="cards-grid">
+
+        <article class="card">
+            <img src="IMG/chipa piru.jpg" alt="Chipá Pirú">
+            <div class="card-content">
+                <h3>Chipá Pirú</h3>
+                <p>
+                     Pequeña rosquita de almidón de mandioca y queso, sumamente crocante.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="IMG/chipa cabure.avif" alt="Chipá Caburé">
+            <p class="media-source">
+                Fuente:
+                <a href="https://www.lanacion.com.ar/recetas/cocina/argentina/chipa-mboca-nid02042022/" target="_blank" rel="noopener noreferrer">La Nación</a>
+            </p>
+            <div class="card-content">
+                <h3>Chipá Caburé</h3>
+                <p>
+                  Cocinado con brasas sobre un palo, elaborada con almidón de mandioca, queso y grasa.
+                </p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="IMG/chipa guazu.jpg" alt="Chipá Guazú">
+            <p class="media-source">
+                Fuente:
+                <a href="https://elgourmet.com/recetas/chipa-guazu-2" target="_blank" rel="noopener noreferrer">El Gourmet</a>
+            </p>
+            <div class="card-content">
+                <h3>Chipá Guazú</h3>
+                <p>
+                  Elaborado con choclo fresco, queso, huevos y leche. Tiene una textura suave y húmeda.
+                </p>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+<!-- AUDIO -->
+
+<section class="audio-section">
+
+    <h2>Ambiente Chipacero</h2>
+
+    <p>
+       Disfrutá esta melodía y acompañá el recorrido gastronómico.
+    </p>
+
+    <audio controls>
+        <source src="AUDIO/Audio chipa.mp3">
+    </audio>
+
+</section>
+
+<!-- LA RUTA -->
+
+<section id="la-ruta" class="ruta-section">
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            LA RUTA
+        </span>
+         
+        <h2>
+            Lugares destacados
+        </h2>
+         <iframe src="https://www.google.com/maps/d/u/0/embed?mid=10f1OfgTDS71x8n-ly95DX1Fw_Z0fv0w&ehbc=2E312F" width="640" height="480" title="Mapa de locales de chipá en Córdoba"></iframe>
+    </div>
+
+    <div class="lugares-grid">
+
+        <article class="lugar">
+            <h3>La Celeste</h3>
+            <p>
+              "Famosa por sus chipás extra queso y su gran popularidad entre estudiantes y cordobeses. Para muchos, es una de las referencias obligadas cuando se habla de chipá en la ciudad."
+            </p>
+        </article>
+
+        <article class="lugar">
+            <h3>Chipacito</h3>
+            <p>
+                "Un clásico de la peatonal cordobesa, reconocido por ofrecer chipás recién horneados y una propuesta rápida para disfrutar en pleno centro."
+            </p>
+        </article>
+
+        <article class="lugar">
+            <h3>La Chipá</h3>
+            <p>
+                "Especializada en productos sin TACC, se convirtió en un punto de referencia para quienes buscan disfrutar del auténtico chipá en versiones aptas para celíacos."
+            </p>
+        </article>
+
+        <article class="lugar">
+            <h3>La Cabaña de Chamigo</h3>
+            <p>
+                "Un bodegón tradicional de Güemes donde el chipá es protagonista. Su versión de gran tamaño y estilo casero lo convirtió en una parada emblemática."
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p id="footer">
+        Desarrollado por Valentina Acosta | Licenciatura en Publicidad · Universidad Blas Pascal · © 2026 
+    </p>
+
+</footer>
+
+</div>
+<script>
+function seleccionar(card, nombre){
+
+    document.querySelectorAll('.card').forEach(item => {
+        item.classList.remove('activa');
+    });
+
+    card.classList.add('activa');
+
+    document.getElementById('resultado').innerHTML =
+    '✔ Elegiste <strong>' + nombre + '</strong>. ¡Excelente elección!';
+}
+</script>
+</body>
+</html>
